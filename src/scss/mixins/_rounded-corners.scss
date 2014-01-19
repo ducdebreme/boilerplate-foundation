@@ -1,8 +1,0 @@
-// -------------------------------------------------------------------
-// Rounded Corners
-// -------------------------------------------------------------------
-
-@mixin rounded-corners($border-radius: $base-border-radius) {
-  border-radius: $border-radius;
-  overflow: hidden;
-}

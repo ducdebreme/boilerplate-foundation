@@ -1,0 +1,25 @@
+
+// linked image thumbnails, that show a hover text
+a.img_hover {
+  position: relative;
+  display: block;
+
+  &:hover > .img_hover_text {
+    // TODO @include opacity(0.1);
+  }
+
+  & > .img_hover_text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding-top: 1em;
+    padding-left: 1em;
+    color: white;
+    font-weight: bold;
+    background-color: #333;
+    //TODO @include opacity(0.8);
+    //TODO @include single-transition(all, 0.3s);
+  }
+}

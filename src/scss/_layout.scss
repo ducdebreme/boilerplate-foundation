@@ -1,0 +1,45 @@
+
+body {
+  background-color: #eee;
+  //TODO @include background-image(linear-gradient(#ddd, #eee 100%));
+  background-attachment: fixed;  
+}
+
+header.panel {
+  border-bottom: 1px solid #bbb;
+}
+
+// assign this class to create white background
+.shadow {
+  //TODO @include single-box-shadow(#bbb,0,0,10px);
+}
+.shadow-darker {
+  //TODO @include single-box-shadow(#999,0,0,10px);
+}
+
+
+.panel {
+  &.dark {
+    @include panel(lighten(#07455E, 10%));
+    a {
+      color: $callout-panel-link-color;
+    }
+  }
+  &.light {
+    @include panel(#fff);
+    a {
+      color: $callout-panel-link-color;
+    }
+  }
+
+}
+
+.page-footer {
+  background-color: darken($primary-color, 10%);
+  padding: $panel-padding;
+  margin-top: $panel-padding;
+  a {
+    //TODO @include link-colors(#fff,#fff,#fff,#fff,#fff)
+  }
+
+}

@@ -4,44 +4,16 @@
 // Import all the things
 // -------------------------------------------------------------------
 
-// Bourbon & Bourbon Neat
-@import "../../dist/assets/bower/bourbon/app/assets/stylesheets/bourbon";
-@import "variables/grid-settings";
-@import "../../dist/assets/bower/neat/app/assets/stylesheets/neat";
+@import "settings";
+@import "../../vendor/bower/foundation/scss/foundation.scss";
 
-// Variables
-@import "variables/variables";
 
-// Mixins
-@import "mixins/image-replacement";
-@import "mixins/rounded-corners";
-@import "mixins/button-reset";
-@import "mixins/omega-reset";
-@import "mixins/full-bleed";
-@import "mixins/module";
+// my custom files
+@import "layout";
+@import "utils";
 
-// Dev
-@import "dev/media-queries";
-@import "dev/baseline-grid";
+// page/component specific
+@import "home";
+@import "img_hover";
 
-// Base
-@import "base/normalize";
-@import "base/reset";
-@import "base/typography";
-@import "base/lists";
-@import "base/code";
-@import "base/tables";
-@import "base/forms";
-@import "base/flashes";
 
-// Components
-@import "components/container";
-@import "components/grid-skeleton";
-@import "components/image-grid";
-@import "components/hero-images";
-@import "components/tables";
-@import "components/buttons";
-
-// Site
-@import "site/site-nav";
-@import "site/author";

@@ -1,0 +1,26 @@
+
+.polaroid-container {
+  position: relative;
+}
+
+.polaroid {
+  padding: 1em 0.75em 2em;
+  border: 1px solid #aaa;
+  background-color: white;
+  position: absolute;
+}
+
+.deg5 {
+  -webkit-transform: rotate(5deg);
+  top: 2em;
+}
+
+.deg10 {
+  -webkit-transform: rotate(10deg);
+  top: 6em;
+  left: 6em;
+}
+
+.w80 {
+  width: 75%;
+}

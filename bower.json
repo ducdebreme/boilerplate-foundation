@@ -5,7 +5,6 @@
   "dependencies": {
     "jquery": "1.10.2",
     "mfglabs-iconset": "https://github.com/MfgLabs/mfglabs-iconset.git",
-    "bourbon": "https://github.com/thoughtbot/bourbon.git#3.1.8",
-    "neat": "https://github.com/thoughtbot/neat.git#1.4.0"
+    "foundation": "https://github.com/zurb/foundation.git"
   }
 }
