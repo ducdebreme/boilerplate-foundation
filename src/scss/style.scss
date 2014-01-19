@@ -7,6 +7,8 @@
 @import "settings";
 @import "../../vendor/bower/foundation/scss/foundation.scss";
 
+// bourbon as replacement for compass
+@import "../../dist/assets/bower/bourbon/app/assets/stylesheets/bourbon";
 
 // my custom files
 @import "layout";
@@ -15,5 +17,6 @@
 // page/component specific
 @import "home";
 @import "img_hover";
+
 
 
