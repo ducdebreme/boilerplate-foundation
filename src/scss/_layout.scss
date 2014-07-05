@@ -24,6 +24,7 @@ header.panel {
     a {
       color: $callout-panel-link-color;
     }
+    color: #ddd;
   }
   &.light {
     @include panel(#fff);

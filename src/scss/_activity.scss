@@ -1,0 +1,21 @@
+.activities {
+  padding: 20px;
+  background-color: white;
+  .row {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+
+    &:last-of-type {
+      border: none;
+      padding: 0;
+    }
+
+    .ac-image  {
+        width: 100%;
+    }
+    .ac-content {
+    }
+
+  }
+}
