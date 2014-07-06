@@ -17,6 +17,7 @@ a.img_hover {
   // positioning element fill the full available space 
   & > .img_fill_box {
     position: absolute;
+    overflow: hidden;
     top: 0;
     left: 0;
     bottom: 0;
@@ -41,32 +42,3 @@ a.img_hover {
 }
 
 
-// 2nd version
-a.img_hover2 {
-  position: relative;
-  display: block;
-  overflow: hidden;
-
-  &:hover > .img_hover_text {
-    top: 0;
-  }
-
-  & > .img_hover_text {
-    position: absolute;
-    top: 55%;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    padding: 0.25em 0.5em;
-    background-color: #006687;
-    opacity: 0.7;
-    @include transition(all, 0.3s);
-
-    p {
-      font-size: 85%;
-      font-weight: bold;
-      color: white;
-    }
-  }
-
-}
