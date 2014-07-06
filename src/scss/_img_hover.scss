@@ -4,24 +4,38 @@ a.img_hover {
   position: relative;
   display: block;
 
+  // hover effects 
   &:hover > .img_hover_text {
     opacity: 0.0;
   }
 
-  & > .img_hover_text {
+  &:hover > .img_hover_bg {
+    opacity: 0.0;
+  }
+
+  // positioning element fill the full available space 
+  & > .img_fill_box {
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
+  }
+
+  // properties of the grey background
+  & > .img_hover_bg {
+    background-color: #444;
+    opacity: 0.55;
+    @include transition(all, 0.3s);
+  }
+  // properties of the text 
+  & > .img_hover_text {
     padding: 1em;
-    color: white;
+    color: #eee;
+    @include transition(all, 0.3s);
     p {
       font-weight: bold;
     }
-    background-color: #444;
-    opacity: 0.66;
-    @include transition(all, 0.3s);
   }
 }
 
