@@ -3,6 +3,7 @@
 a.img_hover {
   position: relative;
   display: block;
+  // margin-bottom: 1px;
 
   // hover effects 
   &:hover > .img_hover_text {
@@ -31,10 +32,10 @@ a.img_hover {
   // properties of the text 
   & > .img_hover_text {
     padding: 1em;
-    color: #eee;
     @include transition(all, 0.3s);
     p {
       font-weight: bold;
+      color: #eee;
     }
   }
 }
